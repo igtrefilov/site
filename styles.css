@@ -31,6 +31,39 @@ img {
   width: 100%;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-align: right;
+  max-width: 400px;
+}
+
+.hero-content h1 {
+  margin: 0 0 10px;
+  font-size: 2.5rem;
+}
+
+.hero-content p {
+  margin: 0 0 20px;
+  font-size: 1.125rem;
+}
+
+.btn-accent {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-accent:hover {
+  background: #a40e0e;
+}
+
 a {
   text-decoration: none;
   color: inherit;
