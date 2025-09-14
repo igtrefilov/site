@@ -27,6 +27,10 @@ img {
   display: block;
 }
 
+.hero-image {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -89,87 +93,6 @@ a {
   font-weight: 600;
 }
 
-.hero {
-  /* убираем старую фон-картинку и оставляем чистый цвет */
-  background-image: none !important;
-  background: var(--dark) !important;
-
-  /* выравнивание по центру по вертикали */
-  display: flex !important;
-  align-items: center !important;
-  min-height: 60vh !important;
-  color: #fff;
-}
-
-/* отключаем затемняющий overlay, чтобы не портил фото/текст */
-.hero .overlay {
-  display: none !important;
-}
-
-/* делаем внутри геро двухколоночный flex */
-.hero .hero-content.container {
-  display: flex !important;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  width: min(1200px, 90%);
-  margin-inline: auto;
-  padding: 40px 0;
-}
-
-/* колонка с текстом */
-.hero-text {
-  max-width: 640px;
-}
-
-/* колонка с фото */
-.hero-photo {
-  flex: 0 0 auto;
-}
-
-/* само фото: ограничиваем размеры, скругляем, тень */
-.hero-photo img {
-  width: 320px;         /* можно 280–360px */
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
-  display: block;
-  object-fit: cover;
-}
-
-/* Hover для кнопки остаётся, ничего трогать не надо */
-
-/* АДАПТИВ: на узких экранах стекаем в колонку и центрируем */
-@media (max-width: 900px) {
-  .hero .hero-content.container {
-    flex-direction: column;
-    gap: 24px;
-    text-align: center;
-  }
-  .hero-text {
-    max-width: 100%;
-  }
-  .hero-photo img {
-    width: 240px;
-  }
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  animation: fade-up 0.8s ease-out both;
-}
 
 .btn {
   display: inline-block;
@@ -181,15 +104,6 @@ a {
 
 .btn:hover {
   transform: translateY(-2px);
-}
-
-.btn-accent {
-  background: var(--accent);
-  color: #fff;
-}
-
-.btn-accent:hover {
-  background: #a51b1b;
 }
 
 .btn-dark {
