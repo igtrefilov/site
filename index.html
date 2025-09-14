@@ -1,70 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Адвокат Москва | Частный юрист</title>
-  <meta name="description" content="Услуги адвоката и юриста в Москве. Бесплатная консультация, защита по уголовным и гражданским делам.">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Адвокат в Москве</title>
+    <meta
+      name="description"
+      content="Защита по уголовным, гражданским и семейным делам. Бесплатная консультация."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="container">
+        <div class="logo">Адвокат в Москве</div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="tel:+79990000000" class="phone">+7 (999) 000‑00‑00</a>
+      </div>
+    </header>
 
-  <!-- HEADER -->
-  <header>
-    <div class="logo">Адвокат Москва</div>
-    <nav>
-      <ul>
-        <li><a href="/">Главная</a></li>
-        <li><a href="/uslugi/">Услуги</a></li>
-        <li><a href="/blog/">Блог</a></li>
-        <li><a href="/contacts/">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="phone">+7 (999) 000-00-00</div>
-  </header>
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Адвокат в Москве</h1>
+        <p>Защита по уголовным, гражданским и семейным делам</p>
+        <a href="#contacts" class="btn btn-accent">Получить консультацию</a>
+      </div>
+    </section>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Адвокат в Москве</h1>
-    <p>Квалифицированная юридическая помощь по уголовным, семейным и гражданским делам.</p>
-    <a href="/consultation/" class="btn">Получить консультацию</a>
-  </section>
+    <section id="services" class="features">
+      <div class="container">
+        <ul class="feature-list">
+          <li>
+            <span class="icon">⚖️</span>
+            <h3>10 лет опыта</h3>
+            <p>более 300 выигранных дел</p>
+          </li>
+          <li>
+            <span class="icon">📂</span>
+            <h3>Более 300</h3>
+            <p>выигранных дел</p>
+          </li>
+          <li>
+            <span class="icon">🤝</span>
+            <h3>Круглосуточная</h3>
+            <p>помощь</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- SERVICES -->
-  <section class="services">
-    <h2>Основные направления</h2>
-    <ul>
-      <li><a href="/uslugi/ugolovnye-dela/">Уголовные дела</a></li>
-      <li><a href="/uslugi/semejnye-dela/">Семейные дела</a></li>
-      <li><a href="/uslugi/dtp-avtoyurist/">Автоюрист</a></li>
-      <li><a href="/uslugi/biznes/">Бизнес</a></li>
-    </ul>
-  </section>
+    <section id="about" class="about">
+      <div class="container about-wrapper">
+        <img
+          src="https://via.placeholder.com/300x400"
+          alt="Фото адвоката"
+          class="about-photo"
+        />
+        <div class="about-info">
+          <h2>Обо мне</h2>
+          <ul class="about-list">
+            <li><span class="about-icon">⚖️</span>Уголовные дела</li>
+            <li><span class="about-icon">👪</span>Семейные дела</li>
+            <li><span class="about-icon">🚗</span>ДТП и автоюрист</li>
+            <li><span class="about-icon">💼</span>Бизнес</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <h2>Почему выбирают меня</h2>
-    <p>Опыт более 10 лет. Более 300 выигранных дел. Индивидуальный подход.</p>
-  </section>
+    <section id="reviews" class="reviews">
+      <div class="container reviews-wrapper">
+        <div class="review">
+          <p>
+            «Мой опыт и знания позволяют эффективно защищать клиентов по
+            широкому кругу правовых вопросов.»
+          </p>
+          <span class="author">Иван Петров</span>
+        </div>
+        <div class="review-cta">
+          <h2>Отзывы клиентов</h2>
+          <a href="#contacts" class="btn btn-accent">Заказать прямо сейчас</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- REVIEWS -->
-  <section class="reviews">
-    <h2>Отзывы клиентов</h2>
-    <!-- Здесь блоки отзывов -->
-  </section>
+    <section id="contacts" class="cta">
+      <div class="container">
+        <h2>Нужна срочная помощь адвоката?</h2>
+        <a href="tel:+79990000000" class="btn btn-dark">Связаться сейчас</a>
+      </div>
+    </section>
 
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Нужна срочная помощь адвоката?</h2>
-    <a href="/contacts/" class="btn">Связаться сейчас</a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Адвокат Москва. Все права защищены.</p>
-    <p><a href="/privacy/">Политика конфиденциальности</a></p>
-  </footer>
-
-</body>
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Адвокат Москва. Все права защищены.</p>
+      </div>
+    </footer>
+  </body>
 </html>
-
