@@ -219,13 +219,12 @@ a {
   flex: 1;
 }
 
-.feature-list li,
-.review {
+
+.feature-list li {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.feature-list li:hover,
-.review:hover {
+.feature-list li:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -270,32 +269,6 @@ a {
   margin-right: 8px;
 }
 
-.reviews {
-  padding: 60px 0;
-}
-
-.reviews-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
-}
-
-.review {
-  flex: 1;
-  background: var(--light);
-  padding: 30px;
-  border-radius: 6px;
-}
-
-.review p {
-  margin-top: 0;
-}
-
-.review-cta {
-  flex: 1;
-  text-align: center;
-}
 
 .cta {
   background: linear-gradient(135deg, var(--accent), var(--dark));
