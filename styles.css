@@ -58,6 +58,10 @@ a {
   font-size: 1.25rem;
 }
 
+.logo img {
+  height: 40px;
+}
+
 .main-nav ul {
   list-style: none;
   display: flex;
