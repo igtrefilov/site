@@ -86,24 +86,68 @@ a {
 }
 
 .hero {
-  position: relative;
-  background: url("https://via.placeholder.com/1600x900") center/cover no-repeat;
+  /* убираем старую фон-картинку и оставляем чистый цвет */
+  background-image: none !important;
+  background: var(--dark) !important;
+
+  /* выравнивание по центру по вертикали */
+  display: flex !important;
+  align-items: center !important;
+  min-height: 60vh !important;
   color: #fff;
-  text-align: center;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
+/* отключаем затемняющий overlay, чтобы не портил фото/текст */
 .hero .overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(11, 31, 58, 0.7),
-    rgba(139, 12, 12, 0.7)
-  );
+  display: none !important;
+}
+
+/* делаем внутри геро двухколоночный flex */
+.hero .hero-content.container {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: min(1200px, 90%);
+  margin-inline: auto;
+  padding: 40px 0;
+}
+
+/* колонка с текстом */
+.hero-text {
+  max-width: 640px;
+}
+
+/* колонка с фото */
+.hero-photo {
+  flex: 0 0 auto;
+}
+
+/* само фото: ограничиваем размеры, скругляем, тень */
+.hero-photo img {
+  width: 320px;         /* можно 280–360px */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+  display: block;
+  object-fit: cover;
+}
+
+/* Hover для кнопки остаётся, ничего трогать не надо */
+
+/* АДАПТИВ: на узких экранах стекаем в колонку и центрируем */
+@media (max-width: 900px) {
+  .hero .hero-content.container {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+  .hero-text {
+    max-width: 100%;
+  }
+  .hero-photo img {
+    width: 240px;
+  }
 }
 
 @keyframes fade-up {
